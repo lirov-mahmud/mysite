@@ -1,0 +1,10 @@
+{% extends 'todo/base.html' %}
+
+{% block content %}
+
+		{{ todo.item }}
+		<p> Status - {{todo.status}}</p>
+		<a class="btn btn-default" href="{% url 'EditTodo' pk=todo.pk %}">Edit</a>
+    
+
+{% endblock %}
